@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRUD App</title>
+  <title>Aplicación CRUD</title>
   <link rel="stylesheet" href="css/App.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Aplicacion CRUD</h1>
+  <h1>Aplicación CRUD</h1>
 
-    <form id="create-form" class="form">
-      <h2>Tarea</h2>
-      <input type="text" id="name-input" placeholder="Nombre" required>
-      <textarea id="description-input" placeholder="Descripción" required style="width: 393px; height: 103px;"></textarea>
-      <button type="submit">Agregar</button>
-    </form>
+  <form id="crud-form">
+    <h2>Agregar Empleado</h2>
+    <input type="text" id="name-input" placeholder="Nombre" required>
+    <input type="tel" id="phone-input" placeholder="Teléfono" required>
+    <input type="email" id="email-input" placeholder="Correo Electrónico" required>
+    <input type="text" id="position-input" placeholder="Puesto" required>
+    <button type="submit">Agregar</button>
+  </form>
 
-    <div id="item-list" class="item-list">
-      <h2>Elementos Creados</h2>
-    </div>
-
-    <form id="edit-form" class="form edit-form" style="display: none;">
-      <h2>Editar Elemento</h2>
-      <input type="text" id="edit-name-input" placeholder="Nombre" required>
-      <textarea id="edit-description-input" placeholder="Descripción" required></textarea>
-      <button id="update-button" type="submit">Actualizar</button>
-      <button id="cancel-button" type="button">Cancelar</button>
-    </form>
-  </div>
+  <table id="employee-table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Teléfono</th>
+        <th>Correo Electrónico</th>
+        <th>Puesto</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="employee-list">
+      <!-- Los empleados se mostrarán aquí -->
+    </tbody>
+  </table>
 
   <script src="js/animacion.js"></script>
 </body>
