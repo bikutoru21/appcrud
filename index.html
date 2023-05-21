@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App CRUD</title>
+  <link rel="stylesheet" href="css/App.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Aplicacion CRUD</h1>
+    <div class="create-section">
+      <h2>Agregar Elemento</h2>
+      <form id="create-form">
+        <input type="text" id="name-input" placeholder="Nombre" required>
+        <input type="text" id="description-input" placeholder="Descripción" required>
+        <button type="submit">Agregar</button>
+      </form>
+    </div>
+    <div class="list-section">
+      <h2>Elementos</h2>
+      <ul id="item-list"></ul>
+    </div>
+  </div>
+  <script src="js/animacion.js"></script>
+</body>
+
+</html>
