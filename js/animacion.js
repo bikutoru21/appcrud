@@ -100,3 +100,5 @@ function renderItems() {
 }
 
 createForm.addEventListener('submit', createItem);
+
+renderItems();

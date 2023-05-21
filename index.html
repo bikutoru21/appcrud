@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App CRUD</title>
+  <title>CRUD App</title>
   <link rel="stylesheet" href="css/App.css">
 </head>
-
 <body>
   <div class="container">
     <h1>Aplicacion CRUD</h1>
-    <div class="create-section">
-      <h2>Agregar Elemento</h2>
-      <form id="create-form">
-        <input type="text" id="name-input" placeholder="Nombre" required>
-        <input type="text" id="description-input" placeholder="Descripción" required>
-        <button type="submit">Agregar</button>
-      </form>
+
+    <form id="create-form" class="form">
+      <h2>Tarea</h2>
+      <input type="text" id="name-input" placeholder="Nombre" required>
+      <textarea id="description-input" placeholder="Descripción" required style="width: 393px; height: 103px;"></textarea>
+      <button type="submit">Agregar</button>
+    </form>
+
+    <div id="item-list" class="item-list">
+      <h2>Elementos Creados</h2>
     </div>
-    <div class="list-section">
-      <h2>Elementos</h2>
-      <ul id="item-list"></ul>
-    </div>
+
+    <form id="edit-form" class="form edit-form" style="display: none;">
+      <h2>Editar Elemento</h2>
+      <input type="text" id="edit-name-input" placeholder="Nombre" required>
+      <textarea id="edit-description-input" placeholder="Descripción" required></textarea>
+      <button id="update-button" type="submit">Actualizar</button>
+      <button id="cancel-button" type="button">Cancelar</button>
+    </form>
   </div>
+
   <script src="js/animacion.js"></script>
 </body>
-
 </html>
